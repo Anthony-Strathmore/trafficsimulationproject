@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Human Body</title>
+    <style>
+        body { margin: 0; }
+        #interface {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="interface">
+        <button onclick="zoomIn()">Zoom In</button>
+        <button onclick="zoomOut()">Zoom Out</button>
+        <button onclick="toggleObject()">Toggle Object</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
